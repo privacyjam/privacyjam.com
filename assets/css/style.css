@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: monospace, sans-serif;
+    background-color: #000;
+    color: #fff;
+    max-width: 60ch;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  a {
+    color: #0ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2 {
+    font-weight: normal;
+  }
+  
+  nav {
+    margin-bottom: 2rem;
+  }
+  
+  nav a {
+    margin-right: 1.5rem;
+  }
+  
