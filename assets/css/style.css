@@ -43,4 +43,10 @@ body {
     text-align: center;
     margin: 2rem auto;
   }
-  
+  h1 a {
+    color: #fff;           /* forces white for titles so they wont turn blue*/
+    text-decoration: none;
+  }
+  h1 a:hover {  /* No hover cuz that would look weird on a title */
+    text-decoration: none;
+  }
