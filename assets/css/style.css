@@ -30,4 +30,10 @@ body {
   nav a {
     margin-right: 1.5rem;
   }
-  
+  footer {
+    margin-top: 4rem;
+    color: #666;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+    
