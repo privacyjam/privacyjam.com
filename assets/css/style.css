@@ -36,4 +36,8 @@ body {
     font-size: 0.75rem;
     text-align: center;
   }
-    
+  .centered {
+    text-align: center;
+    margin: 2rem auto;
+  }
+  
