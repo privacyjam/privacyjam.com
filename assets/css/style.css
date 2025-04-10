@@ -95,12 +95,11 @@ body {
 .rss-link:hover {
   text-decoration: underline;
 }
-.quote-terminal {
-  font-family: monospace;
-  background: #111;
-  padding: 0.6em 1em;
-  border-left: 3px solid #0f0;
-  color: #0f0;
+.home-quote {
+  font-style: italic;
+  color: #aaa;
+  border-left: 2px solid #444;
+  padding-left: 1em;
   margin: 1.5em 0;
-  display: inline-block;
+  letter-spacing: 0.03em;
 }
