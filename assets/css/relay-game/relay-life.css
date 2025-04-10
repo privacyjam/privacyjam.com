@@ -191,3 +191,20 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+#home-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 0.5em 1em;
+  font-family: monospace;
+  font-size: 1.1em;
+  text-decoration: none;
+  z-index: 999;
+}
+
+#home-btn:hover {
+  background: #003300;
+}
