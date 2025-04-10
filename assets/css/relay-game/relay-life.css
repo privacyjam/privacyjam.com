@@ -1,0 +1,193 @@
+/* © 2025 privacyjam — licensed under the Privacyjam License */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #0f0;
+  font-family: monospace;
+  line-height: 1.5;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+form {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  height: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#game-screens {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: #0f0;
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  border: 1px solid #0f0;
+  padding: 0.4em 1em;
+  margin: 0.5em 0.25em;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+label:hover {
+  background: #003300;
+}
+
+label:focus {
+  outline: 1px dashed #0f0;
+  background: #002200;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.screen p {
+  margin: 0.4em 0;
+}
+
+.terminal {
+  display: block;
+  margin: 0.4em 0 0.4em 2em;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  text-align: left;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2ch;
+  animation: blink 1s step-start infinite;
+  margin-left: 0.3ch;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+button {
+  background: black;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 0.3em 1em;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003300;
+}
+
+.trusted_final {
+  align-items: center;
+  text-align: center;
+  gap: 0.6em;
+  margin-top: 1.5em;
+  line-height: 1.4;
+}
+
+#js-exit {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fake-terminal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  gap: 0.5em;
+}
+
+#post-exit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#post-exit button {
+  margin-top: 1em;
+}
+
+.trusted_final .terminal {
+  align-self: flex-start;
+  margin-left: 2em;
+}
+
+#boot:checked ~ #game-screens .boot,
+#syscheck:checked ~ #game-screens .syscheck,
+#config_done:checked ~ #game-screens .config_done,
+#dns_broken:checked ~ #game-screens .dns_broken,
+#policy_restrict:checked ~ #game-screens .policy_restrict,
+#policy_open:checked ~ #game-screens .policy_open,
+#reachable:checked ~ #game-screens .reachable,
+#abuse_ignore:checked ~ #game-screens .abuse_ignore,
+#abuse_reply:checked ~ #game-screens .abuse_reply,
+#cdn_blocked:checked ~ #game-screens .cdn_blocked,
+#legal_threat:checked ~ #game-screens .legal_threat,
+#resist_legal:checked ~ #game-screens .resist_legal,
+#bandwidth_stress:checked ~ #game-screens .bandwidth_stress,
+#upgrade_server:checked ~ #game-screens .upgrade_server,
+#throttle_server:checked ~ #game-screens .throttle_server,
+#relay_family:checked ~ #game-screens .relay_family,
+#stay_solo:checked ~ #game-screens .stay_solo,
+#flagged_badexit:checked ~ #game-screens .flagged_badexit,
+#appeal_success:checked ~ #game-screens .appeal_success,
+#cost_trouble:checked ~ #game-screens .cost_trouble,
+#find_support:checked ~ #game-screens .find_support,
+#shutdown_relay:checked ~ #game-screens .shutdown_relay {
+  display: block;
+}
+
+/* Special case for final “trusted_final” */
+#trusted_final:checked ~ #game-screens .trusted_final {
+  display: flex;
+}
+
+/* Ensure last paragraph spacing is consistent */
+.screen p:not(.terminal):last-of-type {
+  margin-bottom: 0.2em;
+}
+
+html {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

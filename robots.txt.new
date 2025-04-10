@@ -1,0 +1,9 @@
+# For when i go live on my main site
+
+User-agent: *
+Disallow: /assets/
+Disallow: /LICENSE
+Disallow: /CNAME
+Disallow: /404.html
+
+Sitemap: https://privacyjam.com/sitemap.xml

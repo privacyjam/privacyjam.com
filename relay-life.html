@@ -1,0 +1,431 @@
+<!-- © 2025 privacyjam — licensed under the Privacyjam License -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Play Relay Life — a text-based game about running a Tor exit relay. Make choices, survive abuse reports, and defend digital freedom." />
+  <meta name="keywords" content="Relay Life game, Tor exit relay game, privacy game, interactive fiction, text-based game, no-JS game, Tor operator simulation, surveillance resistance, internet freedom game" />
+  <title>The Relay</title>
+  <link rel="stylesheet" href="assets/css/relay-game/relay-life.css" />
+</head>
+<body>
+
+<form autocomplete="off">
+  <input type="radio" name="step" id="boot" checked>
+  <input type="radio" name="step" id="syscheck">
+  <input type="radio" name="step" id="config_done">
+  <input type="radio" name="step" id="policy_restrict">
+  <input type="radio" name="step" id="policy_open">
+  <input type="radio" name="step" id="reachable">
+  <input type="radio" name="step" id="dns_broken">
+  <input type="radio" name="step" id="abuse_ignore">
+  <input type="radio" name="step" id="abuse_reply">
+  <input type="radio" name="step" id="cdn_blocked">
+  <input type="radio" name="step" id="legal_threat">
+  <input type="radio" name="step" id="resist_legal">
+  <input type="radio" name="step" id="bandwidth_stress">
+  <input type="radio" name="step" id="upgrade_server">
+  <input type="radio" name="step" id="throttle_server">
+  <input type="radio" name="step" id="relay_family">
+  <input type="radio" name="step" id="stay_solo">
+  <input type="radio" name="step" id="flagged_badexit">
+  <input type="radio" name="step" id="appeal_success">
+  <input type="radio" name="step" id="cost_trouble">
+  <input type="radio" name="step" id="find_support">
+  <input type="radio" name="step" id="shutdown_relay">
+  <input type="radio" name="step" id="trusted_final">
+
+<div id="game-screens">
+  <!-- Start (Boot) -->
+  <div class="screen boot">
+    <h1>RELAY LIFE</h1>
+    <small style="display: block;">© 2025 privacyjam — licensed under the Privacyjam License</small>
+    <small style="display: block; margin-bottom: 0.75em;">Last updated: April 10, 2025</small>
+  
+    <p>A game where you act as a Tor Relay operator, and face many <strong>obstacles</strong>.</p>
+  
+    <!-- Break between intro and game content -->
+    <hr style="border: none; border-top: 1px dashed #0f0; margin: 1.2em 0;">
+  
+    <p><strong>TOR RELAY ONLINE</strong></p>
+    <p>Consensus Weight: <strong>0</strong></p>
+    <p>Mode: Exit Relay</p>
+    <p>Status: Awaiting configuration</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="syscheck">Run system check</label>
+  </div>
+  
+  <!-- System Check -->
+  <div class="screen syscheck">
+    <p>[✓] Disk ok</p>
+    <p>[✓] CPU ok</p>
+    <p>[✓] ORPort [9001] reachable</p>
+    <p>[✓] Directory synced</p>
+    <p>[✓] GeoIP up-to-date</p>
+    <p>[✓] Time in sync</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="config_done">Continue setup</label>
+  </div>
+  
+  <!-- Config -->
+  <div class="screen config_done">
+    <p>[✓] Relay nickname set [EpicRelay12345]</p>
+    <p>[✓] Contact: admin@epictorrelays1234.com</p>
+    <p>[✓] Network Firewall Not Blocking any Ports</p>
+    <p>DNS: ⚠️ Using Google DNS</p>
+    <p>Consensus Weight: <strong>25</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="dns_broken">Setup Unbound local DNS</label>
+  </div>
+  
+  <!-- DNS -->
+  <div class="screen dns_broken">
+    <p>You disable DNS logging and setup a local Unbound resolver.</p>
+    <p>You have made your relay more resistant against surveillance and metadata leaks.</p>
+    <p>Consensus Weight: <strong>30</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="policy_restrict">Set restricted exit policy</label>
+    <label for="policy_open">Set a fully open exit policy</label>
+  </div>
+  
+  <!-- Exit Policies: Policy Restrict -->
+  <div class="screen policy_restrict">
+    <p>Allowing only ports 53 (DNS), 80 (HTTP), 443 (HTTPS).</p>
+    <p>Low abuse, lower functionality.</p>
+    <p>You relay is more useful for Tor Browser Users</p>
+    <p>Consensus Weight: <strong>200</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+    
+    <label for="reachable">Check reachability</label>
+  </div>
+  
+  <!-- Exit Policies: Policy Open -->
+  <div class="screen policy_open">
+    <p>All ports allowed.</p>
+    <p>Full freedom — high risk and abuse.</p>
+    <p>Consensus Weight: <strong>300</strong></p>
+    
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="reachable">Check reachability</label>
+  </div>
+  
+  <!-- Reachable -->
+  <div class="screen reachable">
+    <p>Your relay is fully published, active, and reachable.</p>
+    <p>[✓] Fast — Your node moves traffic like a pro</p>
+    <p>[✓] Stable — Uptime solid - You've been reliable</p>
+    <p>[✓] V2Dir — You're now serving directory info to others</p>
+
+    <p>Consensus Weight: <strong>2000</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+    <p>You start getting emails regarding your IPs activity</p>
+    <label for="abuse_ignore">Ignore abuse emails</label>
+    <label for="abuse_reply">Respond with policy info</label>
+  </div>
+  
+  <!-- Abuse -->
+  <div class="screen abuse_ignore">
+    <p>You ignore the complaints.</p>
+    <p>Your ISP warns you are starts considering dropping you</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="cdn_blocked">Notice CDN blocks</label>
+  </div>
+  
+  <div class="screen abuse_reply">
+    <p>You respond with Tor info + disclaimers that you arent the one doing the bad traffic.</p>
+    <p>Some understand, some don't and continue pressuring.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="cdn_blocked">Notice CDN blocks</label>
+  </div>
+  
+  <!-- Sites Block -->
+  <div class="screen cdn_blocked">
+    <p>Users report that Cloudflare and others are blocking exit traffic.</p>
+    <p>Sites become unusable and captchas increase.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="legal_threat">Continue</label>
+  </div>
+  
+  <!-- Legal -->
+  <div class="screen legal_threat">
+    <p>A government notice demands logs.</p>
+    <p>You don't log. Pressure builds.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="resist_legal">Resist and publish transparency</label>
+    <label for="shutdown_relay">Shut down quietly</label>
+  </div>
+  
+  <div class="screen resist_legal">
+    <p>You resist and get support from other operators.</p>
+    <p>Consensus Weight: <strong>2200</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="bandwidth_stress">Server under heavy load</label>
+  </div>
+  
+  <!-- Bandwidth -->
+  <div class="screen bandwidth_stress">
+    <p>You're pushing 98% of your limits.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="upgrade_server">Upgrade capacity</label>
+    <label for="throttle_server">Throttle traffic to cope</label>
+  </div>
+  
+  <div class="screen upgrade_server">
+    <p>Upgraded RAM and bandwidth. Node now stable.</p>
+    <p>Consensus Weight: <strong>2500</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="relay_family">Declare relay family</label>
+    <label for="stay_solo">Stay Solo</label>
+  </div>
+  
+  <!-- Throttle Server -->
+  <div class="screen throttle_server">
+    <p>You reduce your bandwidth limits in your torrc.</p>
+    <p>System stable, consensus weight reduced.</p>
+    <p>Consensus Weight: <strong>1800</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="relay_family">Declare relay family</label>
+    <label for="stay_solo">Stay Solo</label>
+  </div>
+  
+  <!-- Stay Solo -->
+  <div class="screen stay_solo">
+    <p>You skip setting a relay family.</p>
+    <p>
+      This is exactly how that one cluster — <strong>KAX17</strong> — ran hundreds of relays 
+      without declaring a family, and allegedly tried to deanonymize users.
+    </p>
+    <p>You're not doing that... right?</p>
+    <p>Consensus Weight stays <strong>unchanged</strong>, but this isn't ideal.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="flagged_badexit">Continue</label>
+  </div>
+  
+  <!-- Relay Family -->
+  <div class="screen relay_family">
+    <p>You configure your <code>MyFamily</code> setting</p>
+    <p>to list your other relays' fingerprints.</p>
+    <p>This helps prevent traffic from traversing multiple nodes you operate.</p>
+    <p>Consensus Weight: <strong>2600</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="flagged_badexit">Continue</label>
+  </div>
+  
+  <!-- BadExit -->
+  <div class="screen flagged_badexit">
+    <p>You're flagged as <strong>BadExit</strong> and <strong>MiddleOnly</strong> due to suspected traffic interference or a broken configuration (e.g., packet tampering, blocking port 443).</p>
+    <p>Consensus Weight: <strong>100</strong></p>
+    <p>Clients may avoid your node until resolved.</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="appeal_success">Appeal and clarify on mailing list</label>
+  </div>
+  
+  <!-- Appeal Success -->
+  <div class="screen appeal_success">
+    <p>You appeal via the tor-relays list.</p>
+    <p>Flag removed. Reputation restored.</p>
+    <p>Consensus Weight: <strong>2500</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="cost_trouble">Server costs rising</label>
+  </div>
+  
+  <!-- Costs -->
+  <div class="screen cost_trouble">
+    <p>You're paying out of pocket.</p>
+    <p>Donations are low.</p>
+    <p style="font-size: 0.8em;">PS: You can donate to me <a href="https://donate.privacyjam.com">Here</a>!! (I have gotten $0!!)</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="find_support">Reach out for funding</label>
+    <label for="shutdown_relay">Shut it down</label>
+  </div>
+  
+  <!-- Find Support -->
+  <div class="screen find_support">
+    <p>A small nonprofit group sponsors your relay.</p>
+    <p>You upgrade your relay slightly</p>
+    <p>You join thier group to help other operators.</p>
+    <p>Consensus Weight: <strong>3000</strong></p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  
+    <label for="trusted_final">Final status</label>
+  </div>
+  
+  <!-- Endings: Shutdown Relay -->
+  <div class="screen shutdown_relay">
+    <p>You shut your relay down.</p>
+    <p>Disk wiped. No trace. The network thanks you.</p>
+    <p>The only evidence you were ever there is the Onioono archive</p>
+    <p>The only thing left is your mad ISP because now one of thier IPs is forever fried with abuse</p>
+  
+    <p class="terminal">
+      <code>root@tor-relay:~$</code><span class="cursor">▌</span>
+    </p>
+  </div>
+  
+<!-- Trusted Final Section -->
+<div class="screen trusted_final">
+  <p>You're now a <strong>trusted exit relay</strong>.</p>
+  <p>Uptime: 99.99% <span style="opacity:0.7;">(stupid power went out)</span></p>
+  <p>Abuse handled. Traffic anonymized. Users helped. Trust earned.</p>
+  <p>Final Consensus Weight: <strong>3500</strong></p>
+  <p><small>PS: Send me an email with your thoughts on the game — <a href="mailto:jam@privacyjam.com">jam@privacyjam.com</a></small></p>
+
+  <!-- No-JS Fallback -->
+  <noscript>
+    <div class="no-js-fallback">
+      <details style="margin-top:1em;">
+        <summary style="cursor:pointer; border:1px solid #0f0; padding:0.4em 1em; display:inline-block; margin:0.5em; color:#0f0;">
+          Exit
+        </summary>
+        <div style="margin-left:2em; margin-top:1em;">
+          <p class="terminal" style="margin:0.2em 0; font-family:monospace;">
+            <code>root@tor-relay:~$</code> rm -rf /
+          </p>
+          <p class="terminal" style="margin:0.2em 0; font-family:monospace;">
+            <code>root@tor-relay:~$</code>
+          </p>
+          <p style="margin-top:1em;">
+            <a href="index.html" style="display:inline-block; border:1px solid #0f0; padding:0.4em 1em; margin:0.5em; text-decoration:none; color:#0f0;">
+              Go Home
+            </a>
+          </p>
+        </div>
+      </details>
+    </div>
+  </noscript>
+
+  <!-- JS-Controlled Animated Exit -->
+  <div id="js-exit" style="display:none;">
+    <button id="exit-btn" type="button" style="border:1px solid #0f0; padding:0.4em 1em; margin:0.5em; cursor:pointer; background:transparent; color:#0f0;">
+      Exit
+    </button>
+    <div id="fake-terminal" style="display:none; margin-top:1em; margin-left:2em;">
+      <p class="terminal" style="margin:0.2em 0; font-family:monospace;">
+        <code>root@tor-relay:~$</code> <span id="typed"></span>
+      </p>
+      <p id="final-prompt" style="display:none; margin: 0.2em 0; font-family:monospace;">
+        <code>root@tor-relay:~$</code><br>
+        <code>French Language pack Removed</code>
+      </p>
+      <div id="go-home" style="display:none; margin-top:1em;">
+        <button type="button" onclick="window.location.href='index.html'" style="border:1px solid #0f0; padding:0.4em 1em; cursor:pointer; background:transparent; color:#0f0;">
+          Go Home
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var jsExit = document.getElementById('js-exit');
+    if (jsExit) jsExit.style.display = 'block';
+    var exitBtn   = document.getElementById('exit-btn'),
+        fakeTerm  = document.getElementById('fake-terminal'),
+        typed     = document.getElementById('typed'),
+        finalPrompt = document.getElementById('final-prompt'),
+        goHome    = document.getElementById('go-home');
+    if (!exitBtn || !fakeTerm || !typed || !finalPrompt || !goHome) return;
+    exitBtn.addEventListener('click', function() {
+      exitBtn.style.display = 'none';
+      fakeTerm.style.display = 'block';
+      var text = 'rm -rf /';
+      var i = 0;
+      var interval = setInterval(function() {
+        typed.textContent += text.charAt(i);
+        i++;
+        if (i >= text.length) {
+          clearInterval(interval);
+          setTimeout(function() {
+            finalPrompt.style.display = 'block';
+            setTimeout(function() {
+              goHome.style.display = 'block';
+            }, 500);
+          }, 500);
+        }
+      }, 100);
+    });
+  });
+</script>
+</body>
+</html>
