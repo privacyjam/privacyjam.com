@@ -1,7 +1,10 @@
 #!/bin/bash
 
-BASE_URL="https://privacyjam.com"
-OUTPUT="sitemap.xml.new"
+# This script updates the sitemap to any new urls you might add
+# Will clear current sitemap
+
+BASE_URL="https://privacyjam.com" # This is your url that will be applied to the file path
+OUTPUT="sitemap.xml" # sitemap File
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' > $OUTPUT
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> $OUTPUT
