@@ -88,3 +88,10 @@ body {
   white-space: normal;
   display: inline;
 }
+.rss-link {
+  color: #ffa500;
+  font-weight: bold;
+}
+.rss-link:hover {
+  text-decoration: underline;
+}

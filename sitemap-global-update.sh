@@ -3,7 +3,7 @@
 # This script updates the sitemap to any new urls you might add
 # Will clear current sitemap
 
-BASE_URL="https://privacyjam.com" # This is your url that will be applied to the file path
+BASE_URL="https://dev.privacyjam.com" # This is your url that will be applied to the file path
 OUTPUT="sitemap.xml" # sitemap File
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' > $OUTPUT
@@ -20,4 +20,4 @@ done
 
 echo '</urlset>' >> $OUTPUT
 
-echo "✅ Sitemap generated to $OUTPUT"
+echo "Sitemap generated to $OUTPUT"
