@@ -16,9 +16,6 @@
     <loc>https://dev.privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</loc>
   </url>
   <url>
-    <loc>https://dev.privacyjam.com/blog/test.html</loc>
-  </url>
-  <url>
     <loc>https://dev.privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</loc>
   </url>
   <url>
@@ -53,6 +50,9 @@
   </url>
   <url>
     <loc>https://dev.privacyjam.com/blog/archive/how-many-people-use-tor.html</loc>
+  </url>
+  <url>
+    <loc>https://dev.privacyjam.com/no-index/test.html</loc>
   </url>
   <url>
     <loc>https://dev.privacyjam.com/index.html</loc>

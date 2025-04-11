@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: /
+Disallow: /assets/
+Disallow: /no-index/
+Disallow: /blog/assets/images/
+Disallow: /LICENSE
+Disallow: /CNAME
+Disallow: /404.html
+
+Sitemap: https://privacyjam.com/sitemap.xml
