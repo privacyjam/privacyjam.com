@@ -3,7 +3,7 @@
 # This needs improving
 
 # Configuration
-SITE_URL="https://dev.privacyjam.com"
+SITE_URL="https://privacyjam.com"
 BLOG_DIR="../blog"
 ARCHIVE_DIR="../blog/archive"
 RSS_FILE="../blog/rss.xml"

@@ -3,7 +3,7 @@
 # This script updates the sitemap using files from the directory above where it is located
 # It clears and writes a new sitemap file one level up
 
-BASE_URL="https://dev.privacyjam.com"  # Domain
+BASE_URL="https://privacyjam.com"  # Domain
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"  # Absolute path of the script
 TARGET_DIR="$(realpath "$SCRIPT_DIR/..")"  # One directory above the script
 OUTPUT="$SCRIPT_DIR/../sitemap.xml"  # Output file one directory up
