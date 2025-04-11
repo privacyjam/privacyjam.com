@@ -5,8 +5,8 @@
 
 BASE_URL="https://privacyjam.com"  # Domain
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"  # Absolute path of the script
-TARGET_DIR="$(realpath "$SCRIPT_DIR/..")"  # One directory above the script
-OUTPUT="$SCRIPT_DIR/../sitemap.xml"  # Output file one directory up
+TARGET_DIR="$(realpath "$SCRIPT_DIR/..")"
+OUTPUT="$SCRIPT_DIR/../sitemap.xml"
 
 echo "Generating sitemap from: $TARGET_DIR"
 echo "Saving sitemap to: $OUTPUT"
@@ -15,9 +15,9 @@ echo "Saving sitemap to: $OUTPUT"
 echo '<?xml version="1.0" encoding="UTF-8"?>' > "$OUTPUT"
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$OUTPUT"
 
-# Loop through .html files in the parent directory
+# Loop through .html files
 find "$TARGET_DIR" -type f -name "*.html" ! -path "*/.*" | while read -r file; do
-  # Get relative path from the parent directory root
+  # Get relative path
   relative_path="${file#$TARGET_DIR/}"
 
   # Write each URL
