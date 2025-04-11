@@ -1,0 +1,148 @@
+<!-- © 2025 privacyjam — licensed under the Privacyjam License -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search | privacyjam</title>
+  
+  <!-- Favicon (one level up) -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../favicon.png" type="image/png" />
+
+  <!-- Stylesheet (also one level up) -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    input[type="search"] {
+      width: 100%;
+      padding: 0.5em;
+      font-size: 1em;
+      background-color: #111;
+      color: #0ff;
+      border: 1px solid #333;
+      margin-bottom: 1em;
+    }
+    .search-results li {
+      margin: 1em 0;
+    }
+    .search-results li span {
+      opacity: 0.6;
+      font-size: 0.9em;
+      display: block;
+      margin-top: 0.2em;
+    }
+    .no-js-warning {
+      background: #200;
+      border: 1px solid #500;
+      padding: 1em;
+      margin-bottom: 1.5em;
+      color: #faa;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="../index.html">privacyjam</a></h1>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../blog.html">Back to Blogs</a>
+  </nav>
+
+  <main>
+    <noscript>
+      <div class="no-js-warning">
+        This search requires JavaScript to function. You can still use <strong>Ctrl+F</strong> on the <a href="../blog.html">Blog Page</a> to search without js.
+      </div>
+    </noscript>
+
+    <h2>Search Posts</h2>
+    <input type="search" id="searchInput" placeholder="Search blog posts..." />
+    <ul class="search-results" id="results"></ul>
+  </main>
+
+  <footer>
+    &copy; privacyjam.com<br />
+    <small>Last updated: April 11, 2025</small>
+  </footer>
+
+  <script>
+    async function loadRSS() {
+      const response = await fetch('rss.xml'); // file is in same folder, so this is correct
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "text/xml");
+
+      const seen = new Set();
+      const items = [];
+
+      for (const item of xml.querySelectorAll("item")) {
+        const link = item.querySelector("link")?.textContent || "";
+        if (seen.has(link)) continue;
+        seen.add(link);
+
+        let title = item.querySelector("title")?.textContent || "";
+        title = title.replace(/ \| Privacy Jam$/i, "");
+
+        items.push({
+          title,
+          link,
+          description: item.querySelector("description")?.textContent || "",
+          pubDate: item.querySelector("pubDate")?.textContent || ""
+        });
+      }
+
+      items.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+      return items;
+    }
+
+    function renderResults(posts, query) {
+      const list = document.getElementById("results");
+      list.innerHTML = "";
+
+      let results;
+
+      if (query) {
+        results = posts.filter(post =>
+          post.title.toLowerCase().includes(query) ||
+          post.description.toLowerCase().includes(query)
+        );
+      } else {
+        results = posts.slice(0, 10);
+      }
+
+      if (results.length === 0) {
+        list.innerHTML = "<li>No results found.</li>";
+        return;
+      }
+
+      for (const post of results) {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <a href="${post.link}"><strong>${post.title}</strong></a>
+          <span>${new Date(post.pubDate).toDateString()}</span>
+        `;
+        list.appendChild(li);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+  if (window.location.protocol === "file:") {
+    const list = document.getElementById("results");
+    list.innerHTML = `<li>Searching doesn't work when opened as a local file. I don't know why, but you can <strong>run a local server</strong> or view the live site.</li>`;
+    return;
+  }
+
+  const posts = await loadRSS();
+  const input = document.getElementById("searchInput");
+
+  renderResults(posts, "");
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    renderResults(posts, query);
+  });
+});
+  </script>
+</body>
+</html>
