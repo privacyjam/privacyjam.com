@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /no-index/
-Disallow: /blog/assets/images/
+Disallow: /blog/assets/
 Disallow: /LICENSE
 Disallow: /CNAME
 Disallow: /404.html
