@@ -5,7 +5,7 @@
   <link>https://privacyjam.com/blog.html</link>
   <description>Updates and posts from privacyjam about privacy, Tor, and digital freedom.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 11 Apr 2025 07:25:44 -0700</lastBuildDate>
+  <lastBuildDate>Fri, 11 Apr 2025 14:17:27 -0700</lastBuildDate>
   <item>
     <title>Why You Should Install an Ad Blocker Today</title>
     <link>https://privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</link>
@@ -96,6 +96,13 @@
     <description><![CDATA[How many people use Tor? How many people use Tor per day? Those are questions I have had for a while, but thanks to the Tor metrics site we can answer that.]]></description>
     <pubDate>Sun, 02 Mar 2025 00:00:00 -0800</pubDate>
     <guid>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</guid>
+  </item>
+  <item>
+    <title>Search</title>
+    <link>https://privacyjam.com/blog/search.html</link>
+    <description><![CDATA[(No description available.)]]></description>
+    <pubDate>Fri, 11 Apr 2025 00:00:00 -0700</pubDate>
+    <guid>https://privacyjam.com/blog/search.html</guid>
   </item>
   <item>
     <title>How to install Signal on Tails OS | Privacy Jam</title>
