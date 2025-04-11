@@ -16,8 +16,15 @@
     .center {
       margin-top: 3rem;
     }
-    #blog-redirect {
+    .blog-hint {
       margin-top: 2em;
+      opacity: 0.85;
+    }
+    code {
+      background: #111;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-size: 0.95em;
     }
   </style>
 </head>
@@ -26,38 +33,17 @@
 
   <div class="center">
     <p>Whatever you were looking for isn't here.</p>
-    <p><a href="index.html">Back to safety</a><small> (Homepage)</small></p><p>
+    <p><a href="index.html">Back to safety</a><small> (Homepage)</small></p>
 
-    <!-- JS-powered blog path suggestion -->
-    <div id="blog-redirect" style="display:none;"></div>
-
-    <!-- No-JS fallback -->
-    <noscript>
-      <div style="margin-top: 2em; opacity: 0.8;">
-        <p>If you were trying to view one of my blog posts from my old site, the link might still work.</p>
-        <p>Just add <code>/blog/archive/</code> before the page name in the URL.</p>
-        <p>if you have <code>privacyjam.com/epic-blog</code> it would be <code>privacyjam.com/blog/archive/epic-blog</code></p>
-        <p>Or <a href="blog.html">view all my blog posts</a>.</p>
-      </div>
-    </noscript>
+    <div class="blog-hint">
+      <p>If you were trying to open a blog post from my old site, it still exists — but the path has changed.</p>
+      <p>Just add <code>/blog/archive/</code> after <code>privacyjam.com/</code>.</p>
+      <p>For example, if you had:</p>
+      <p><code>privacyjam.com/epic-blog</code></p>
+      <p>Change it to:</p>
+      <p><code>privacyjam.com/blog/archive/epic-blog</code></p>
+      <p>Or you can <a href="blog.html">browse all blog posts</a>.</p>
+    </div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const path = window.location.pathname;
-
-      if (!path.includes("blog/archive") && path.endsWith(".html")) {
-        const redirectedUrl = "/blog/archive" + path;
-        const box = document.getElementById("blog-redirect");
-
-        box.style.display = "block";
-        box.innerHTML = `
-          <p>Were you trying to visit a blog post from my old site?</p>
-          <p><a href="${redirectedUrl}">Try opening it here instead</a></p>
-          <p>Or <a href="/blog.html">browse all blog posts</a></p>
-        `;
-      }
-    });
-  </script>
 </body>
 </html>
