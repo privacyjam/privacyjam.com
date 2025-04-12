@@ -5,188 +5,72 @@
   <link>https://privacyjam.com/blog.html</link>
   <description>Updates and posts from privacyjam about privacy, Tor, and digital freedom.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 11 Apr 2025 14:17:27 -0700</lastBuildDate>
-  <item>
-    <title>Why You Should Install an Ad Blocker Today</title>
-    <link>https://privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</link>
-    <description><![CDATA[Why you should install an AdBlocker today. An AdBlocker stops trackers and minimizes tracking companies like Google, Facebook, and others can do.]]></description>
-    <pubDate>Thu, 10 Apr 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</guid>
-  </item>
-  <item>
-    <title>How to install Signal on Tails OS | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</link>
-    <description><![CDATA[I'm assuming you have Tails, and know the basics of it.]]></description>
-    <pubDate>Wed, 26 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</guid>
-  </item>
-  <item>
-    <title>Use Tor as a free Vpn! | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</link>
-    <description><![CDATA[Run these commands]]></description>
-    <pubDate>Sun, 09 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</guid>
-  </item>
-  <item>
-    <title>How to make an Anonymous Email: Mail2Tor | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</link>
-    <description><![CDATA[Important: To create an account your must have your safety level below safest, this is so hCaptcha can work.]]></description>
-    <pubDate>Sat, 22 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</guid>
-  </item>
-  <item>
-    <title>Should you use a Bridge with Tor In the U.S? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</link>
-    <description><![CDATA[To start let me give a short overview of what a bridge is, a Tor bridge hides that your connecting to Tor, if you can successfully hide that your using Tor, then you can bypass censorship. Different b]]></description>
-    <pubDate>Mon, 03 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</guid>
-  </item>
-  <item>
-    <title>Should you use a VPN with TOR? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/should-you-use-a-vpn-with-tor.html</link>
-    <description><![CDATA[Should you use a VPN with TOR seems like a simple question if you know what a VPN is, yes. Unfortunately it is more complicated then that.]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/should-you-use-a-vpn-with-tor.html</guid>
-  </item>
-  <item>
-    <title>A Map of All Proton VPN Servers | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/a-map-of-all-proton-vpn-servers.html</link>
-    <description><![CDATA[https://protonvpnmap.privacyjam.com/]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/a-map-of-all-proton-vpn-servers.html</guid>
-  </item>
-  <item>
-    <title>How to get a Proton Email's Public Key | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-get-a-proton-emails-public-key.html</link>
-    <description><![CDATA[If you want to get a Proton Email users public key so you can encrypt your messages with them, and don't use Proton mail, here is how you can download their public key from Protons key servers.]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-get-a-proton-emails-public-key.html</guid>
-  </item>
-  <item>
-    <title>Looking At a Textnow Data Export | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</link>
-    <description><![CDATA[A few years ago, I just needed a Phone number to talk with my friends, and I found Textnow. I chatted with my friends, but eventually we didn't text anymore and my Textnow account just sat there. The]]></description>
-    <pubDate>Sat, 01 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</guid>
-  </item>
-  <item>
-    <title>How to fix your Tor relay having the wrong location | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</link>
-    <description><![CDATA[(No description available.)]]></description>
-    <pubDate>Wed, 12 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</guid>
-  </item>
-  <item>
-    <title>The best Free and Paid VPNs | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</link>
-    <description><![CDATA[When you connect to a website, your ISP can see who you are, and where your going aswell as the website]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</guid>
-  </item>
-  <item>
-    <title>How to install and use ProtonVPN | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</link>
-    <description><![CDATA[(No description available.)]]></description>
-    <pubDate>Sat, 15 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</guid>
-  </item>
-  <item>
-    <title>How many People use Tor? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</link>
-    <description><![CDATA[How many people use Tor? How many people use Tor per day? Those are questions I have had for a while, but thanks to the Tor metrics site we can answer that.]]></description>
-    <pubDate>Sun, 02 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</guid>
-  </item>
-  <item>
-    <title>Search</title>
-    <link>https://privacyjam.com/blog/search.html</link>
-    <description><![CDATA[(No description available.)]]></description>
-    <pubDate>Fri, 11 Apr 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/search.html</guid>
-  </item>
-  <item>
-    <title>How to install Signal on Tails OS | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</link>
-    <description><![CDATA[I'm assuming you have Tails, and know the basics of it.]]></description>
-    <pubDate>Wed, 26 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</guid>
-  </item>
-  <item>
-    <title>Use Tor as a free Vpn! | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</link>
-    <description><![CDATA[Run these commands]]></description>
-    <pubDate>Sun, 09 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</guid>
-  </item>
-  <item>
-    <title>How to make an Anonymous Email: Mail2Tor | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</link>
-    <description><![CDATA[Important: To create an account your must have your safety level below safest, this is so hCaptcha can work.]]></description>
-    <pubDate>Sat, 22 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</guid>
-  </item>
-  <item>
-    <title>Should you use a Bridge with Tor In the U.S? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</link>
-    <description><![CDATA[To start let me give a short overview of what a bridge is, a Tor bridge hides that your connecting to Tor, if you can successfully hide that your using Tor, then you can bypass censorship. Different b]]></description>
-    <pubDate>Mon, 03 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</guid>
-  </item>
-  <item>
-    <title>Should you use a VPN with TOR? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/should-you-use-a-vpn-with-tor.html</link>
-    <description><![CDATA[Should you use a VPN with TOR seems like a simple question if you know what a VPN is, yes. Unfortunately it is more complicated then that.]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/should-you-use-a-vpn-with-tor.html</guid>
-  </item>
-  <item>
-    <title>A Map of All Proton VPN Servers | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/a-map-of-all-proton-vpn-servers.html</link>
-    <description><![CDATA[https://protonvpnmap.privacyjam.com/]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/a-map-of-all-proton-vpn-servers.html</guid>
-  </item>
-  <item>
-    <title>How to get a Proton Email's Public Key | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-get-a-proton-emails-public-key.html</link>
-    <description><![CDATA[If you want to get a Proton Email users public key so you can encrypt your messages with them, and don't use Proton mail, here is how you can download their public key from Protons key servers.]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-get-a-proton-emails-public-key.html</guid>
-  </item>
-  <item>
-    <title>Looking At a Textnow Data Export | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</link>
-    <description><![CDATA[A few years ago, I just needed a Phone number to talk with my friends, and I found Textnow. I chatted with my friends, but eventually we didn't text anymore and my Textnow account just sat there. The]]></description>
-    <pubDate>Sat, 01 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</guid>
-  </item>
-  <item>
-    <title>How to fix your Tor relay having the wrong location | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</link>
-    <description><![CDATA[(No description available.)]]></description>
-    <pubDate>Wed, 12 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</guid>
-  </item>
-  <item>
-    <title>The best Free and Paid VPNs | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</link>
-    <description><![CDATA[When you connect to a website, your ISP can see who you are, and where your going aswell as the website]]></description>
-    <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</guid>
-  </item>
-  <item>
-    <title>How to install and use ProtonVPN | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</link>
-    <description><![CDATA[(No description available.)]]></description>
-    <pubDate>Sat, 15 Mar 2025 00:00:00 -0700</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</guid>
-  </item>
-  <item>
-    <title>How many People use Tor? | Privacy Jam</title>
-    <link>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</link>
-    <description><![CDATA[How many people use Tor? How many people use Tor per day? Those are questions I have had for a while, but thanks to the Tor metrics site we can answer that.]]></description>
-    <pubDate>Sun, 02 Mar 2025 00:00:00 -0800</pubDate>
-    <guid>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</guid>
-  </item>
+  <lastBuildDate>Sat, 12 Apr 2025 08:39:45 -0700</lastBuildDate>
+<item>
+  <title>How to install and use Tor Browser</title>
+  <link>https://privacyjam.com/blog/how-to-install-and-use-tor-browser.html</link>
+  <pubDate>Sat, 12 Apr 2025 00:00:00 -0700</pubDate>
+  <guid>https://privacyjam.com/blog/how-to-install-and-use-tor-browser.html</guid>
+</item>
+<item>
+  <title>Why You Should Install an Ad Blocker Today</title>
+  <link>https://privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</link>
+  <pubDate>Thu, 10 Apr 2025 00:00:00 -0700</pubDate>
+  <guid>https://privacyjam.com/blog/why-you-should-install-an-ad-blocker-today.html</guid>
+</item>
+<item>
+  <title>How to install Signal on Tails OS</title>
+  <link>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</link>
+  <pubDate>Wed, 26 Mar 2025 00:00:00 -0700</pubDate>
+  <guid>https://privacyjam.com/blog/archive/how-to-install-signal-on-tails-os.html</guid>
+</item>
+<item>
+  <title>How to install and use ProtonVPN</title>
+  <link>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</link>
+  <pubDate>Sat, 15 Mar 2025 00:00:00 -0700</pubDate>
+  <guid>https://privacyjam.com/blog/archive/how-to-install-and-use-protonvpn.html</guid>
+</item>
+<item>
+  <title>How to fix your Tor relay having the wrong location</title>
+  <link>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</link>
+  <pubDate>Wed, 12 Mar 2025 00:00:00 -0700</pubDate>
+  <guid>https://privacyjam.com/blog/archive/how-to-fix-your-tor-relay-having-the-wrong-location.html</guid>
+</item>
+<item>
+  <title>Use Tor as a free Vpn!</title>
+  <link>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</link>
+  <pubDate>Sun, 09 Mar 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/use-tor-as-a-free-vpn.html</guid>
+</item>
+<item>
+  <title>Should you use a Bridge with Tor In the U.S?</title>
+  <link>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</link>
+  <pubDate>Mon, 03 Mar 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/should-you-use-a-bridge-with-tor-in-the-u-s.html</guid>
+</item>
+<item>
+  <title>How many People use Tor?</title>
+  <link>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</link>
+  <pubDate>Sun, 02 Mar 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/how-many-people-use-tor.html</guid>
+</item>
+<item>
+  <title>How to make an Anonymous Email: Mail2Tor</title>
+  <link>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</link>
+  <pubDate>Sat, 22 Feb 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/how-to-make-an-anonymous-email-mail2tor.html</guid>
+</item>
+<item>
+  <title>The best Free and Paid VPNs</title>
+  <link>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</link>
+  <pubDate>Sun, 02 Feb 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/the-best-free-and-paid-vpns.html</guid>
+</item>
+<item>
+  <title>Looking At a Textnow Data Export</title>
+  <link>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</link>
+  <pubDate>Sat, 01 Feb 2025 00:00:00 -0800</pubDate>
+  <guid>https://privacyjam.com/blog/archive/looking-at-a-textnow-data-export.html</guid>
+</item>
 </channel>
 </rss>
