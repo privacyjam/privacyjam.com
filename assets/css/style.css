@@ -131,3 +131,30 @@ body {
   color: #888;
   font-size: 0.85rem;
 }
+
+
+.onion-link {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.onion-link:hover {
+  text-decoration: none !important;
+}
+
+.onion-link small {
+  display: block;
+  margin-top: 4px;
+  color: #ccc;
+  font-size: 0.8em;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.onion-link:hover small {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
