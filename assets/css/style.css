@@ -158,3 +158,48 @@ body {
   text-decoration: underline;
   text-decoration-color: white;
 }
+
+/* === Donation Page Styles === */
+
+.crypto-box {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.crypto-box h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.address {
+  font-family: monospace;
+  font-size: 0.95rem;
+  background-color: #000;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  word-break: break-word;
+  margin: 0 auto 0.75rem;
+  max-width: 100%;
+}
+
+.copy-btn {
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default (no JS) */
+}
+
+.copy-btn.copied {
+  background-color: #008000;
+  color: #fff;
+}

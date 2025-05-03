@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, noarchive, nosnippet">
+  <title>Donate | privacyjam</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">  
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <h1><a href="index.html">privacyjam</a></h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tor.html">Tor</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html" class="active">Donate</a>
+  </nav>
+
+  <main>
+    <p>If you donate I encourage you to send me an email or @ me on bluesky!!</p>
+    <div class="crypto-box">
+      <h3>Bitcoin (BTC)</h3>
+      <p id="btc-address" class="address">bc1qy9jazn7wrhsx9nslu3jjgd2ljj7de58elep7u4</p>
+      <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
+    </div>
+
+    <div class="crypto-box">
+      <h3>Monero (XMR)</h3>
+      <p id="xmr-address" class="address">8AdrpL55tvMhbwks3zKnHL2696qndThcwa36VBXtMAEdhcmjp3bUYhu9bF3Bwed9Mfg4gup4sFAa6VzwZEmVDPZjRR94bgy</p>
+      <button class="copy-btn" onclick="copyToClipboard(this, 'xmr-address')">Copy Address</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; privacyjam.com<br />
+    <small>Last updated: May 1, 2025</small>
+  </footer>
+
+  <script>
+    // Only run in JS-enabled browsers
+    document.querySelectorAll(".copy-btn").forEach(btn => btn.style.display = "inline-block");
+
+    function copyToClipboard(button, id) {
+      navigator.clipboard.writeText(document.getElementById(id).innerText).then(() => {
+        button.textContent = "Copied!";
+        button.classList.add("copied");
+        setTimeout(() => {
+          button.textContent = "Copy Address";
+          button.classList.remove("copied");
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
