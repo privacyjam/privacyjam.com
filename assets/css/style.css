@@ -203,3 +203,22 @@ body {
   background-color: #008000;
   color: #fff;
 }
+
+.crypto-converter {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.crypto-converter p {
+  max-width: 500px;
+  margin: 0 auto 1em;
+  font-size: 1rem;
+}
+
+.crypto-converter-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1em;
+  background: #f9f9f9;
+}
