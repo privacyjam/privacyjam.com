@@ -24,36 +24,43 @@
   <main>
     <p>If you donate I encourage you to send me an email or @ me on bluesky!!</p>
     <p>Donations go to funding my relays, and powering new ones!</p>
-    <div class="crypto-box">
-      <h3>Bitcoin (BTC)</h3>
-      <p id="btc-address" class="address">bc1qy9jazn7wrhsx9nslu3jjgd2ljj7de58elep7u4</p>
-      <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
-    </div>
 
     <div class="crypto-box">
       <h3>Monero (XMR)</h3>
       <p id="xmr-address" class="address">8AdrpL55tvMhbwks3zKnHL2696qndThcwa36VBXtMAEdhcmjp3bUYhu9bF3Bwed9Mfg4gup4sFAa6VzwZEmVDPZjRR94bgy</p>
       <button class="copy-btn" onclick="copyToClipboard(this, 'xmr-address')">Copy Address</button>
+      <input type="checkbox" id="toggle-xmr-qr" class="qr-toggle-checkbox">
+      <label for="toggle-xmr-qr" class="qr-toggle-btn" data-show="Show XMR QR Code" data-hide="Hide XMR QR Code"></label>
+      <div class="qr-image-container">
+       <img src="assets/misc_images/xmr.png" alt="Monero QR Code">
+      </div>
+
     </div>
-  </main>
+
+   <div class="crypto-box">
+      <h3>Bitcoin (BTC)</h3>
+      <p id="btc-address" class="address">bc1qy9jazn7wrhsx9nslu3jjgd2ljj7de58elep7u4</p>
+      <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
+      <input type="checkbox" id="toggle-btc-qr" class="qr-toggle-checkbox">
+      <label for="toggle-btc-qr" class="qr-toggle-btn" data-show="Show BTC QR Code" data-hide="Hide BTC QR Code"></label>
+      <div class="qr-image-container">
+        <img src="assets/misc_images/btc.png" alt="Bitcoin QR Code">
+      </div>
+    </div>
 
   <div class="crypto-converter">
     <h3>Like Other Currencies?</h3>
-    <p>You can swap any crypto into Monero (XMR) using this trusted tool - the funds go straight to my XMR wallet.</p>
+    <p>Using this swapper, you can donate with so many more coins! It will send the matching amount to me in Monero!</p>
     <div class="crypto-converter-box">
-      <iframe 
-        src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=8AdrpL55tvMhbwks3zKnHL2696qndThcwa36VBXtMAEdhcmjp3bUYhu9bF3Bwed9Mfg4gup4sFAa6VzwZEmVDPZjRR94bgy&donation=True&simple_mode=True&amount=0.003&name=privacyjam&description=Donate+and+fund+my+relays%2C+and+new+ones%21&email=jam@privacyjam.com&ticker_from=eth&network_from=ERC20&bgcolor=" 
-        width="310" 
-        height="350" 
-        style="border: none;" 
-        scrolling="no">
-      </iframe>
+      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=8AdrpL55tvMhbwks3zKnHL2696qndThcwa36VBXtMAEdhcmjp3bUYhu9bF3Bwed9Mfg4gup4sFAa6VzwZEmVDPZjRR94bgy&donation=True&simple_mode=True&amount=0.007&name=privacyjam&description=Donate+to+fund+Tor+relays+and+more%21&email=jam@privacyjam.com&ticker_from=eth&network_from=ERC20&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe> 
     </div>
   </div>
 
+    </main>
+
   <footer>
     &copy; privacyjam.com<br />
-    <small>Last updated: May 1, 2025</small>
+    <small>Last updated: July 4, 2025</small>
   </footer>
 
   <script>

@@ -1,87 +1,111 @@
 /* © 2025 privacyjam — licensed under the Privacyjam License */
 body {
-    margin: 0;
-    padding: 2rem;
-    font-family: monospace, sans-serif;
-    background-color: #000;
-    color: #fff;
-    max-width: 65ch;
-    line-height: 1.4;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+  padding: 2rem;
+  font-family: monospace, sans-serif;
+  background-color: #000;
+  color: #fff;
+  max-width: 65ch;
+  line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 75ch;
   }
-  @media (min-width: 1200px) {
-    body {
-      max-width: 75ch;
-    }
-  }  
-  a {
-    color: #0ff;
-    text-decoration: none;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
   }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  h1, h2 {
-    font-weight: normal;
-  }
-  
-  nav {
-    margin-bottom: 2rem;
-  }
-  
-  nav a {
-    margin-right: 1.5rem;
-  }
-  footer {
-    margin-top: 4rem;
-    color: #666;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-  .centered {
-    text-align: center;
-    margin: 2rem auto;
-  }
-  h1 a {
-    color: #fff;           /* forces white for titles so they wont turn blue*/
-    text-decoration: none;
-  }
-  h1 a:hover {               /* No hover cuz that would look weird on a title */
-    text-decoration: none;
-  }
-  
-  nav a.active {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #0f0;
-  }  
 
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .address {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+
+  .copy-btn,
+  .qr-toggle-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .crypto-converter-box iframe {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .qr-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+a {
+  color: #0ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2 {
+  font-weight: normal;
+}
+nav {
+  margin-bottom: 2rem;
+}
+nav a {
+  margin-right: 1.5rem;
+}
+footer {
+  margin-top: 4rem;
+  color: #666;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.centered {
+  text-align: center;
+  margin: 2rem auto;
+}
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+h1 a:hover {
+  text-decoration: none;
+}
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0f0;
+}
 .archive-blog-list {
   list-style: none;
   padding: 0;
   margin: 0.5em 0;
 }
-
 .blog-list {
   list-style: none;
   padding: 0;
   margin: 0.5em 0;
 }
-
 .blog-list li {
   margin: 0.4em 0;
   font-size: 1em;
 }
-
 .blog-list li span {
   opacity: 0.6;
   margin-left: 0.5em;
   font-size: 0.95em;
 }
-
 .archive-note {
   font-size: 0.9em;
   opacity: 0.7;
@@ -94,23 +118,16 @@ body {
 .rss-link {
   color: #ffa500;
   font-weight: bold;
+  text-decoration: none;
 }
 .rss-link:hover {
   text-decoration: underline;
 }
-
-.rss-link {
-  color: #ffa500;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .search-link {
   color: #cc4df3;
   font-weight: bold;
   text-decoration: none;
 }
-
 .home-quote {
   font-style: italic;
   color: #ccc;
@@ -122,7 +139,6 @@ body {
   line-height: 1.6;
   max-width: 700px;
 }
-
 .quote-author {
   display: block;
   margin-top: 0.5em;
@@ -131,19 +147,15 @@ body {
   color: #888;
   font-size: 0.85rem;
 }
-
-
 .onion-link {
   text-align: center;
   display: inline-block;
   text-decoration: none !important;
   color: inherit;
 }
-
 .onion-link:hover {
   text-decoration: none !important;
 }
-
 .onion-link small {
   display: block;
   margin-top: 4px;
@@ -152,15 +164,11 @@ body {
   text-decoration: none;
   transition: color 0.2s, text-decoration 0.2s;
 }
-
 .onion-link:hover small {
   color: #fff;
   text-decoration: underline;
   text-decoration-color: white;
 }
-
-/* === Donation Page Styles === */
-
 .crypto-box {
   background-color: #111;
   border: 1px solid #333;
@@ -169,12 +177,10 @@ body {
   margin: 2rem 0;
   text-align: center;
 }
-
 .crypto-box h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
-
 .address {
   font-family: monospace;
   font-size: 0.95rem;
@@ -186,7 +192,6 @@ body {
   margin: 0 auto 0.75rem;
   max-width: 100%;
 }
-
 .copy-btn {
   background-color: #0f0;
   color: #000;
@@ -196,29 +201,62 @@ body {
   font-family: inherit;
   border-radius: 5px;
   cursor: pointer;
-  display: none; /* Hidden by default (no JS) */
+  display: none;
 }
-
 .copy-btn.copied {
   background-color: #008000;
   color: #fff;
 }
-
 .crypto-converter {
   text-align: center;
   margin-top: 2em;
 }
-
 .crypto-converter p {
   max-width: 500px;
   margin: 0 auto 1em;
   font-size: 1rem;
 }
-
 .crypto-converter-box {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 1em;
   background: #f9f9f9;
+}
+.qr-toggle-checkbox {
+  display: none;
+}
+.qr-toggle-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #0f0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+}
+.qr-toggle-checkbox:not(:checked) + .qr-toggle-btn::before {
+  content: attr(data-show);
+}
+.qr-toggle-checkbox:checked + .qr-toggle-btn::before {
+  content: attr(data-hide);
+}
+.qr-image-container {
+  display: none;
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.qr-toggle-checkbox:checked + .qr-toggle-btn + .qr-image-container {
+  display: block;
+  opacity: 1;
+}
+.qr-image-container img {
+  max-width: 200px;
+  border-radius: 6px;
+  border: 1px solid #333;
 }
