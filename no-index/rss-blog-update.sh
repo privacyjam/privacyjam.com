@@ -76,4 +76,4 @@ cat <<EOF >> "$RSS_FILE"
 </rss>
 EOF
 
-echo "✅ RSS feed generated at $RSS_FILE"
+echo "RSS feed generated at $RSS_FILE"
