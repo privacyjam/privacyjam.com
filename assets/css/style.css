@@ -1,4 +1,5 @@
-/* © 2025 privacyjam — licensed under the Privacyjam License */
+/* © 2025 privacyjam - licensed under the Privacyjam License */
+
 body {
   margin: 0;
   padding: 2rem;
@@ -10,11 +11,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 1200px) {
   body {
     max-width: 75ch;
   }
 }
+
 @media (max-width: 600px) {
   body {
     padding: 1rem;
@@ -49,85 +52,126 @@ body {
     height: auto;
   }
 }
+
 a {
   color: #0ff;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 h1, h2 {
   font-weight: normal;
 }
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
 nav {
   margin-bottom: 2rem;
 }
+
 nav a {
   margin-right: 1.5rem;
 }
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0f0;
+}
+
 footer {
   margin-top: 4rem;
   color: #666;
   font-size: 0.75rem;
   text-align: center;
 }
+
 .centered {
   text-align: center;
   margin: 2rem auto;
 }
-h1 a {
-  color: #fff;
-  text-decoration: none;
-}
-h1 a:hover {
-  text-decoration: none;
-}
-nav a.active {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #0f0;
-}
-.archive-blog-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.5em 0;
-}
+
+.archive-blog-list,
 .blog-list {
   list-style: none;
   padding: 0;
   margin: 0.5em 0;
 }
+
 .blog-list li {
   margin: 0.4em 0;
   font-size: 1em;
 }
+
 .blog-list li span {
   opacity: 0.6;
   margin-left: 0.5em;
   font-size: 0.95em;
 }
+
 .archive-note {
   font-size: 0.9em;
   opacity: 0.7;
   margin-bottom: 1em;
 }
+
 .blog-link {
   white-space: normal;
   display: inline;
 }
+
 .rss-link {
   color: #ffa500;
   font-weight: bold;
   text-decoration: none;
 }
+
 .rss-link:hover {
   text-decoration: underline;
 }
+
 .search-link {
   color: #cc4df3;
   font-weight: bold;
   text-decoration: none;
 }
+
+.onion-link {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.onion-link:hover {
+  text-decoration: none !important;
+}
+
+.onion-link small {
+  display: block;
+  margin-top: 4px;
+  color: #ccc;
+  font-size: 0.8em;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.onion-link:hover small {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 .home-quote {
   font-style: italic;
   color: #ccc;
@@ -139,6 +183,7 @@ nav a.active {
   line-height: 1.6;
   max-width: 700px;
 }
+
 .quote-author {
   display: block;
   margin-top: 0.5em;
@@ -147,28 +192,7 @@ nav a.active {
   color: #888;
   font-size: 0.85rem;
 }
-.onion-link {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none !important;
-  color: inherit;
-}
-.onion-link:hover {
-  text-decoration: none !important;
-}
-.onion-link small {
-  display: block;
-  margin-top: 4px;
-  color: #ccc;
-  font-size: 0.8em;
-  text-decoration: none;
-  transition: color 0.2s, text-decoration 0.2s;
-}
-.onion-link:hover small {
-  color: #fff;
-  text-decoration: underline;
-  text-decoration-color: white;
-}
+
 .crypto-box {
   background-color: #111;
   border: 1px solid #333;
@@ -176,11 +200,19 @@ nav a.active {
   padding: 1.5rem;
   margin: 2rem 0;
   text-align: center;
+  transition: all 0.3s ease;
 }
+
 .crypto-box h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
+
+.crypto-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
 .address {
   font-family: monospace;
   font-size: 0.95rem;
@@ -192,6 +224,7 @@ nav a.active {
   margin: 0 auto 0.75rem;
   max-width: 100%;
 }
+
 .copy-btn {
   background-color: #0f0;
   color: #000;
@@ -203,29 +236,16 @@ nav a.active {
   cursor: pointer;
   display: none;
 }
+
 .copy-btn.copied {
   background-color: #008000;
   color: #fff;
 }
-.crypto-converter {
-  text-align: center;
-  margin-top: 2em;
-}
-.crypto-converter p {
-  max-width: 500px;
-  margin: 0 auto 1em;
-  font-size: 1rem;
-}
-.crypto-converter-box {
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 1em;
-  background: #f9f9f9;
-}
+
 .qr-toggle-checkbox {
   display: none;
 }
+
 .qr-toggle-btn {
   display: inline-block;
   margin-top: 0.75rem;
@@ -239,24 +259,194 @@ nav a.active {
   font-family: inherit;
   position: relative;
 }
+
 .qr-toggle-checkbox:not(:checked) + .qr-toggle-btn::before {
   content: attr(data-show);
 }
+
 .qr-toggle-checkbox:checked + .qr-toggle-btn::before {
   content: attr(data-hide);
 }
+
 .qr-image-container {
   display: none;
   margin-top: 1rem;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .qr-toggle-checkbox:checked + .qr-toggle-btn + .qr-image-container {
   display: block;
   opacity: 1;
 }
+
 .qr-image-container img {
   max-width: 200px;
   border-radius: 6px;
   border: 1px solid #333;
+}
+
+.crypto-converter {
+  background: linear-gradient(135deg, #1d0553 0%, #05704d 100%);
+  border: 2px solid #6428ca;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.crypto-converter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+.crypto-converter h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+}
+
+.crypto-converter p {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto 1em;
+  font-size: 1rem;
+}
+
+.crypto-converter-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+.crypto-box.bitcoin {
+  background: linear-gradient(135deg, #b8721a 0%, #cc6600 100%);
+  border: 2px solid #a05d1a;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(184, 114, 26, 0.2);
+}
+
+.crypto-box.bitcoin h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.crypto-box.bitcoin .address {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.crypto-box.bitcoin .copy-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #b8721a;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.crypto-box.bitcoin .copy-btn:hover {
+  background: #a16010;
+  color: #fff;
+  border-color: #fff;
+}
+
+.crypto-box.bitcoin .qr-toggle-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crypto-box.bitcoin .qr-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.crypto-box.monero {
+  background: linear-gradient(135deg, #cc4d00 0%, #992200 100%);
+  border: 2px solid #943804;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(204, 77, 0, 0.2);
+}
+
+.crypto-box.monero h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.crypto-box.monero .address {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.crypto-box.monero .copy-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #cc4d00;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.crypto-box.monero .copy-btn:hover {
+  background: #cc4d00;
+  color: #fff;
+  border-color: #fff;
+}
+
+.crypto-box.monero .qr-toggle-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crypto-box.monero .qr-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.crypto-box.ethereum {
+  background: linear-gradient(135deg, #314ab8 0%, #1d3c7e 100%);
+  border: 2px solid #1e40af;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(74, 95, 184, 0.2);
+}
+
+.crypto-box.ethereum h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.crypto-box.ethereum .address {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.crypto-box.ethereum .copy-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4a5fb8;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.crypto-box.ethereum .copy-btn:hover {
+  background: #4a5fb8;
+  color: #fff;
+  border-color: #fff;
+}
+
+.crypto-box.ethereum .qr-toggle-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crypto-box.ethereum .qr-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
 }

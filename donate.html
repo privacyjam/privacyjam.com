@@ -22,10 +22,21 @@
   </nav>
 
   <main>
-    <p>If you donate I encourage you to send me an email or @ me on bluesky!!</p>
+    <p>Thank you so much for donating (If you are), if you donate I encourage you to @ me on bluesky!!</p>
     <p>Donations go to funding my relays, and powering new ones!</p>
 
-    <div class="crypto-box">
+    <div class="crypto-box bitcoin">
+      <h3>Bitcoin (BTC)</h3>
+      <p id="btc-address" class="address">bc1qv7re95szeve4n6e8qegjx4fs2723vcsm3kgx25</p>
+      <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
+      <input type="checkbox" id="toggle-btc-qr" class="qr-toggle-checkbox">
+      <label for="toggle-btc-qr" class="qr-toggle-btn" data-show="Show BTC QR Code" data-hide="Hide BTC QR Code"></label>
+      <div class="qr-image-container">
+        <img src="assets/misc_images/btc.png" alt="Bitcoin QR Code">
+      </div>
+    </div>
+
+    <div class="crypto-box monero">
       <h3>Monero (XMR)</h3>
       <p id="xmr-address" class="address">83JxTYFVKfBZLu8dQhYF4X5eUXZk3p5vDYEH34wgJni3K434BjxjNrpP8Z7oMjEm6JcRGpyN23hh8gAFfFHQwLdJAWxYKXx</p>
       <button class="copy-btn" onclick="copyToClipboard(this, 'xmr-address')">Copy Address</button>
@@ -37,14 +48,15 @@
 
     </div>
 
-   <div class="crypto-box">
-      <h3>Bitcoin (BTC)</h3>
-      <p id="btc-address" class="address">bc1qv7re95szeve4n6e8qegjx4fs2723vcsm3kgx25</p>
-      <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
-      <input type="checkbox" id="toggle-btc-qr" class="qr-toggle-checkbox">
-      <label for="toggle-btc-qr" class="qr-toggle-btn" data-show="Show BTC QR Code" data-hide="Hide BTC QR Code"></label>
+    <div class="crypto-box ethereum">
+      <h3>Ethereum (ETH)</h3>
+      <small>Accepts: ETH, DAI, USDC, DEURO, USDT, WETH, WBTC</small><br><br>
+      <p id="eth-address" class="address">0x1eBD84BEBbA21d70E42652f1F02aCDcC9D7f2c78</p>
+      <button class="copy-btn" onclick="copyToClipboard(this, 'eth-address')">Copy Address</button>
+      <input type="checkbox" id="toggle-eth-qr" class="qr-toggle-checkbox">
+      <label for="toggle-eth-qr" class="qr-toggle-btn" data-show="Show ETH QR Code" data-hide="Hide ETH QR Code"></label>
       <div class="qr-image-container">
-        <img src="assets/misc_images/btc.png" alt="Bitcoin QR Code">
+        <img src="assets/misc_images/eth.png" alt="Ethereum QR Code">
       </div>
     </div>
 
@@ -52,7 +64,7 @@
     <h3>Like Other Currencies?</h3>
     <p>Using this swapper, you can donate with so many more coins! It will send me the matching amount in XMR!</p>
     <div class="crypto-converter-box">
-      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=83JxTYFVKfBZLu8dQhYF4X5eUXZk3p5vDYEH34wgJni3K434BjxjNrpP8Z7oMjEm6JcRGpyN23hh8gAFfFHQwLdJAWxYKXx&donation=True&simple_mode=True&amount=0.01&name=privacyjam&description=Donate+to+fund+relays+and+more%21&ticker_from=eth&network_from=ERC20&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe> 
+      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=83JxTYFVKfBZLu8dQhYF4X5eUXZk3p5vDYEH34wgJni3K434BjxjNrpP8Z7oMjEm6JcRGpyN23hh8gAFfFHQwLdJAWxYKXx&donation=True&simple_mode=True&amount=0.1&name=privacyjam&ticker_from=sol&network_from=Mainnet&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe> 
     </div>
   </div>
 
