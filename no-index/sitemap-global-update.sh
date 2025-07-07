@@ -27,4 +27,4 @@ find "$TARGET_DIR" -type f -name "*.html" ! -path "*/.*" | while read -r file; d
 done
 
 echo '</urlset>' >> "$OUTPUT"
-echo "✅ Sitemap generated at: $OUTPUT"
+echo "Sitemap generated at: $OUTPUT"
