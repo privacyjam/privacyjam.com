@@ -325,128 +325,118 @@ footer {
   display: inline-block;
 }
 
-.crypto-box.bitcoin {
-  background: linear-gradient(135deg, #b8721a 0%, #cc6600 100%);
-  border: 2px solid #a05d1a;
+.crypto-box.bitcoin,
+.crypto-box.monero,
+.crypto-box.ethereum,
+.crypto-box.litecoin {
   color: #fff;
-  box-shadow: 0 4px 15px rgba(184, 114, 26, 0.2);
+  border: 2px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.crypto-box.bitcoin h3 {
+.crypto-box.bitcoin h3,
+.crypto-box.monero h3,
+.crypto-box.ethereum h3,
+.crypto-box.litecoin h3 {
   color: #fff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.crypto-box.bitcoin .address {
+.crypto-box.bitcoin .address,
+.crypto-box.monero .address,
+.crypto-box.ethereum .address,
+.crypto-box.litecoin .address {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   backdrop-filter: blur(5px);
 }
 
-.crypto-box.bitcoin .copy-btn {
+.crypto-box.bitcoin .copy-btn,
+.crypto-box.monero .copy-btn,
+.crypto-box.ethereum .copy-btn,
+.crypto-box.litecoin .copy-btn {
   background: rgba(255, 255, 255, 0.9);
-  color: #b8721a;
   border: 2px solid rgba(255, 255, 255, 0.9);
   font-weight: bold;
+}
+
+.crypto-box.bitcoin .copy-btn:hover,
+.crypto-box.monero .copy-btn:hover,
+.crypto-box.ethereum .copy-btn:hover,
+.crypto-box.litecoin .copy-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.crypto-box.bitcoin .qr-toggle-btn,
+.crypto-box.monero .qr-toggle-btn,
+.crypto-box.ethereum .qr-toggle-btn,
+.crypto-box.litecoin .qr-toggle-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crypto-box.bitcoin .qr-toggle-btn:hover,
+.crypto-box.monero .qr-toggle-btn:hover,
+.crypto-box.ethereum .qr-toggle-btn:hover,
+.crypto-box.litecoin .qr-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.crypto-box.bitcoin {
+  background: linear-gradient(135deg, #b8721a 0%, #cc6600 100%);
+  border-color: #a05d1a;
+  box-shadow: 0 4px 15px rgba(184, 114, 26, 0.2);
+}
+
+.crypto-box.bitcoin .copy-btn {
+  color: #b8721a;
 }
 
 .crypto-box.bitcoin .copy-btn:hover {
   background: #a16010;
-  color: #fff;
-  border-color: #fff;
-}
-
-.crypto-box.bitcoin .qr-toggle-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.crypto-box.bitcoin .qr-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
 }
 
 .crypto-box.monero {
   background: linear-gradient(135deg, #cc4d00 0%, #992200 100%);
-  border: 2px solid #943804;
-  color: #fff;
+  border-color: #943804;
   box-shadow: 0 4px 15px rgba(204, 77, 0, 0.2);
 }
 
-.crypto-box.monero h3 {
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.crypto-box.monero .address {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  backdrop-filter: blur(5px);
-}
-
 .crypto-box.monero .copy-btn {
-  background: rgba(255, 255, 255, 0.9);
   color: #cc4d00;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  font-weight: bold;
 }
 
 .crypto-box.monero .copy-btn:hover {
   background: #cc4d00;
-  color: #fff;
-  border-color: #fff;
-}
-
-.crypto-box.monero .qr-toggle-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.crypto-box.monero .qr-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
 }
 
 .crypto-box.ethereum {
   background: linear-gradient(135deg, #314ab8 0%, #1d3c7e 100%);
-  border: 2px solid #1e40af;
-  color: #fff;
+  border-color: #1e40af;
   box-shadow: 0 4px 15px rgba(74, 95, 184, 0.2);
 }
 
-.crypto-box.ethereum h3 {
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.crypto-box.ethereum .address {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  backdrop-filter: blur(5px);
-}
-
 .crypto-box.ethereum .copy-btn {
-  background: rgba(255, 255, 255, 0.9);
   color: #4a5fb8;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  font-weight: bold;
 }
 
 .crypto-box.ethereum .copy-btn:hover {
   background: #4a5fb8;
-  color: #fff;
-  border-color: #fff;
 }
 
-.crypto-box.ethereum .qr-toggle-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.crypto-box.litecoin {
+  background: linear-gradient(135deg, #345d9d 0%, #2a4a7a 100%);
+  border-color: #2563eb;
+  box-shadow: 0 4px 15px rgba(52, 93, 157, 0.2);
 }
 
-.crypto-box.ethereum .qr-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
+.crypto-box.litecoin .copy-btn {
+  color: #345d9d;
+}
+
+.crypto-box.litecoin .copy-btn:hover {
+  background: #2573f0;
 }
