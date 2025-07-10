@@ -50,7 +50,7 @@
 
     <div class="crypto-box ethereum">
       <h3>Ethereum (ETH)</h3>
-      <small>Accepts: ETH, DAI, USDC, DEURO, USDT, WETH, WBTC</small><br><br>
+      <small>Accepts: ETH, DAI, USDC, DEURO, USDT, WETH, WBTC, BNB</small><br><br>
       <p id="eth-address" class="address">0x1eBD84BEBbA21d70E42652f1F02aCDcC9D7f2c78</p>
       <button class="copy-btn" onclick="copyToClipboard(this, 'eth-address')">Copy Address</button>
       <input type="checkbox" id="toggle-eth-qr" class="qr-toggle-checkbox">
@@ -68,14 +68,26 @@
      <label for="toggle-ltc-qr" class="qr-toggle-btn" data-show="Show LTC QR Code" data-hide="Hide LTC QR Code"></label>
      <div class="qr-image-container">
     <img src="assets/misc_images/ltc.png" alt="Litecoin QR Code">
+    </div>
   </div>
-</div>
+
+  <div class="crypto-box solana">
+    <h3>Solana (SOL)</h3>
+    <small>Accepts: SOL, USDT, USDC, WSOL, SOETH</small><br><br>
+     <p id="sol-address" class="address">Ai1owNyPLqbKu9qZtHhjaL4my4T8mLyrcNmTJ3pMmRi6</p>
+     <button class="copy-btn" onclick="copyToClipboard(this, 'sol-address')">Copy Address</button>
+     <input type="checkbox" id="toggle-sol-qr" class="qr-toggle-checkbox">
+     <label for="toggle-sol-qr" class="qr-toggle-btn" data-show="Show SOL QR Code" data-hide="Hide SOL QR Code"></label>
+     <div class="qr-image-container">
+    <img src="assets/misc_images/sol.png" alt="Solana QR Code">
+    </div>
+  </div>
 
   <div class="crypto-converter">
     <h3>Like Other Currencies?</h3>
     <p>Using this swapper, you can donate with so many more coins! It will send me the matching amount in XMR!</p>
     <div class="crypto-converter-box">
-      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=83JxTYFVKfBZLu8dQhYF4X5eUXZk3p5vDYEH34wgJni3K434BjxjNrpP8Z7oMjEm6JcRGpyN23hh8gAFfFHQwLdJAWxYKXx&donation=True&simple_mode=True&amount=0.1&name=privacyjam&ticker_from=sol&network_from=Mainnet&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe> 
+      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=83JxTYFVKfBZLu8dQhYF4X5eUXZk3p5vDYEH34wgJni3K434BjxjNrpP8Z7oMjEm6JcRGpyN23hh8gAFfFHQwLdJAWxYKXx&donation=True&simple_mode=True&amount=0.004&name=privacyjam&description=Donations+go+to+funding+my+relays%2C+and+powering+new+ones%21&ticker_from=bch&network_from=Mainnet&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe> 
     </div>
   </div>
 
